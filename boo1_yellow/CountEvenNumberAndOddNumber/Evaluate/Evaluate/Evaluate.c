@@ -1,52 +1,52 @@
 //Evaluate.c
 /**************************************************************
-ÆÄÀÏ¸í : Evaluate.c
-±â´É : ÀÔ·ÂÇÏ´Â ¸¸Å­ ¼öµéÀ» ÀÔ·Â¹Þ°í, ³ª¸ÓÁö¸¦ ±¸ÇÏ°í ³ª¸ÓÁö¸¦ ±âÁØÀ¸·Î Æò°¡ÇÏ°í, Â¦¼öÀÇ °³¼ö¿Í È¦¼öÀÇ °³¼ö¸¦ ¼¼°í, Â¦¼öÀÇ °³¼ö¿Í È¦¼öÀÇ °³¼ö¸¦ Ãâ·ÂÇÑ´Ù.
-ÇÔ¼ö¸íÄª : main
-Ãâ·Â : Â¦¼öÀÇ °³¼ö, È¦¼öÀÇ °³¼ö
-ÀÔ·Â : ¼öµé
-ÀÛ¼ºÀÚ : ±è¼¼Áß
-ÀÛ¼ºÀÏÀÚ : 2016/11/12
+íŒŒì¼ëª… : Evaluate.c
+ê¸°ëŠ¥ : ìž…ë ¥í•˜ëŠ” ë§Œí¼ ìˆ˜ë“¤ì„ ìž…ë ¥ë°›ê³ , ë‚˜ë¨¸ì§€ë¥¼ êµ¬í•˜ê³  ë‚˜ë¨¸ì§€ë¥¼ ê¸°ì¤€ìœ¼ë¡œ í‰ê°€í•˜ê³ , ì§ìˆ˜ì˜ ê°œìˆ˜ì™€ í™€ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì„¸ê³ , ì§ìˆ˜ì˜ ê°œìˆ˜ì™€ í™€ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤.
+í•¨ìˆ˜ëª…ì¹­ : main
+ì¶œë ¥ : ì§ìˆ˜ì˜ ê°œìˆ˜, í™€ìˆ˜ì˜ ê°œìˆ˜
+ìž…ë ¥ : ìˆ˜ë“¤
+ìž‘ì„±ìž : Joey
+ìž‘ì„±ì¼ìž : 2016/11/12
 **************************************************************/
-//ÀüÃ³¸®±â
+//ì „ì²˜ë¦¬ê¸°
 #include <stdio.h>
 #define DIVISOR 2
 #define EVENREMAINDER 0
 
-//ÇÔ¼öÀÇ ¼±¾ð
+//í•¨ìˆ˜ì˜ ì„ ì–¸
 int main(int argc, char* argv[]);
 
-//ÇÔ¼öÀÇ Á¤ÀÇ
+//í•¨ìˆ˜ì˜ ì •ì˜
 int main(int argc, char* argv[]){
-	//ÀÚµ¿º¯¼ö ¼±¾ð ¹× Á¤ÀÇ
+	//ìžë™ë³€ìˆ˜ ì„ ì–¸ ë° ì •ì˜
 	int evenCount = 0;
 	int oddCount = 0;
 	int number;
 	int remainder;
 
-	// 1.1. ¼ö¸¦ ÀÔ·Â¹Þ´Â´Ù.
+	// 1.1. ìˆ˜ë¥¼ ìž…ë ¥ë°›ëŠ”ë‹¤.
 	scanf("%d", &number);
-	//1. ÆÄÀÏÀÇ ³¡ÀÌ ¾Æ´Ñµ¿¾È ¹Ýº¹ÇÑ´Ù.
+	//1. íŒŒì¼ì˜ ëì´ ì•„ë‹Œë™ì•ˆ ë°˜ë³µí•œë‹¤.
 	while (!feof(stdin)) {		
-		// 1.2. ³ª¸ÓÁö¸¦ ±¸ÇÑ´Ù.
+		// 1.2. ë‚˜ë¨¸ì§€ë¥¼ êµ¬í•œë‹¤.
 		remainder = number;
 		while (remainder >= DIVISOR) {
 			remainder -= DIVISOR;
 		}
-		// 1.3. Æò°¡¸¦ ÇÑ´Ù.
+		// 1.3. í‰ê°€ë¥¼ í•œë‹¤.
 		if (remainder == EVENREMAINDER) {
-			//  1.3.1. ÂüÀÌ¸é, Â¦¼öÀÇ °³¼ö¸¦ ¼¾´Ù.
+			//  1.3.1. ì°¸ì´ë©´, ì§ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì„¼ë‹¤.
 			evenCount++;
 		}
 		else {
-			//  1.3.2. °ÅÁþÀÌ¸é, È¦¼öÀÇ °³¼ö¸¦ ¼¾´Ù.
+			//  1.3.2. ê±°ì§“ì´ë©´, í™€ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì„¼ë‹¤.
 			oddCount++;
 		}		
-		// 1.1. ¼ö¸¦ ÀÔ·Â¹Þ´Â´Ù.
+		// 1.1. ìˆ˜ë¥¼ ìž…ë ¥ë°›ëŠ”ë‹¤.
 		scanf("%d", &number);
 	}
-	//2. Â¦¼öÀÇ °³¼ö, È¦¼öÀÇ °³¼ö¸¦ Ãâ·ÂÇÑ´Ù.
+	//2. ì§ìˆ˜ì˜ ê°œìˆ˜, í™€ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤.
 	printf("%d %d\n", evenCount, oddCount);
-	//3. ³¡³»´Ù
+	//3. ëë‚´ë‹¤
 	return 0;
 }
