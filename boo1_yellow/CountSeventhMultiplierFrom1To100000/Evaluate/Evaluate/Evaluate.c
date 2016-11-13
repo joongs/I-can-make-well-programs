@@ -1,49 +1,49 @@
 //Evaluate.c
 /**************************************************************
-ÆÄÀÏ¸í : Evaluate.c
-±â´É : 1ºÎÅÍ 100,000±îÁö ¼ýÀÚ¸¦ ¼¼°í, ³ª¸ÓÁö¸¦ °è»êÇÏ°í, ³ª¸ÓÁö¸¦ ±âÁØÀ¸·Î Æò°¡ÇÏ°í, 
-      ¹è¼öÀÇ °³¼ö¸¦ ¼¼°í, ¹è¼öÀÇ °³¼ö¸¦ Ãâ·ÂÇÑ´Ù.
-ÇÔ¼ö¸íÄª : main
-Ãâ·Â : ¹è¼öÀÇ °³¼ö
-ÀÔ·Â : ¾øÀ½
-ÀÛ¼ºÀÚ : ±è¼¼Áß
-ÀÛ¼ºÀÏÀÚ : 2016/11/12
+íŒŒì¼ëª… : Evaluate.c
+ê¸°ëŠ¥ : 1ë¶€í„° 100,000ê¹Œì§€ ìˆ«ìžë¥¼ ì„¸ê³ , ë‚˜ë¨¸ì§€ë¥¼ ê³„ì‚°í•˜ê³ , ë‚˜ë¨¸ì§€ë¥¼ ê¸°ì¤€ìœ¼ë¡œ í‰ê°€í•˜ê³ , 
+      ë°°ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì„¸ê³ , ë°°ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤.
+í•¨ìˆ˜ëª…ì¹­ : main
+ì¶œë ¥ : ë°°ìˆ˜ì˜ ê°œìˆ˜
+ìž…ë ¥ : ì—†ìŒ
+ìž‘ì„±ìž : Joey
+ìž‘ì„±ì¼ìž : 2016/11/12
 **************************************************************/
-// ÀüÃ³¸®±â
+// ì „ì²˜ë¦¬ê¸°
 #include <stdio.h>
 #define MAXIMUM 100000
 #define MINIMUM 1
 #define DIVISOR 7
 #define CONDITION 0
 
-// ÇÔ¼ö¼±¾ð
+// í•¨ìˆ˜ì„ ì–¸
 int main(int argc, char* argv[]);
 
-// ÇÔ¼öÁ¤ÀÇ
+// í•¨ìˆ˜ì •ì˜
 int main(int argc, char* argv[]) {
-	//ÀÚµ¿ º¯¼ö ¼±¾ð ¹× Á¤ÀÇ
+	//ìžë™ ë³€ìˆ˜ ì„ ì–¸ ë° ì •ì˜
 	int mutiplieCount = 0;
 	int remainder;
 	int number = MINIMUM;
 
-	//1. 100000º¸´Ù ÀÛ°Å³ª °°Àº µ¿¾È ¹Ýº¹ÇÑ´Ù
+	//1. 100000ë³´ë‹¤ ìž‘ê±°ë‚˜ ê°™ì€ ë™ì•ˆ ë°˜ë³µí•œë‹¤
 	while (number <= MAXIMUM) {
-		// 1.1. ³ª¸ÓÁö¸¦ ±¸ÇÑ´Ù
+		// 1.1. ë‚˜ë¨¸ì§€ë¥¼ êµ¬í•œë‹¤
 		remainder = number;
 		while (remainder >= DIVISOR) {
 			remainder -= DIVISOR;
 		}
-		// 1.2. ¹è¼öÀÎÁö ÆÇ´ÜÇÑ´Ù
+		// 1.2. ë°°ìˆ˜ì¸ì§€ íŒë‹¨í•œë‹¤
 		if (remainder == CONDITION) {
-			//  1.2.1. ÂüÀÎ°æ¿ì, ¹è¼öÀÇ °³¼ö¸¦ ¼¾´Ù
+			//  1.2.1. ì°¸ì¸ê²½ìš°, ë°°ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì„¼ë‹¤
 			mutiplieCount++;
 		}
-		// 1.3. ¼ýÀÚ¸¦ ¼¾´Ù.
+		// 1.3. ìˆ«ìžë¥¼ ì„¼ë‹¤.
 		number++;
 	}
-	//2. ¹è¼öÀÇ °³¼ö¸¦ Ãâ·ÂÇÑ´Ù
+	//2. ë°°ìˆ˜ì˜ ê°œìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤
 	printf("%d\n", mutiplieCount);
 
-	//3. ³¡³»´Ù
+	//3. ëë‚´ë‹¤
 	return 0;
 }
