@@ -1,10 +1,7 @@
 # I-can-make-well-programs
 
 # Yellow Book
-* chapter11 Implementation
- * evaluate for students
- * sum from 1 to 100 without input numbers.
- * count 7th multiplier until 100,000 without input numbers.
- * count even number and odd number when numbers are inputed.
-
-
+ * 학생들의 평균을 평가하다. : c / java
+ * 1부터 100까지 합을 구하라. : c / 
+ * 1부터 100000까지 7의 배수의 개수를 구하라. : c / 
+ * 입력받은 수들의 짝수개수와 홀수개수를 구하라. : c / 
