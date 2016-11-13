@@ -1,39 +1,39 @@
 //Calculate.c
 /**********************************************************
-ÆÄÀÏ¸í : Calculate.c
-±â´É : 1ºÎÅÍ 100±îÁö ¼ýÀÚ¸¦ ¼¼°í, ÇÕÀ» °è»êÇÏ°í, ÇÕÀ» Ãâ·ÂÇÑ´Ù.
-ÇÔ¼ö¸íÄª : main
-Ãâ·Â : ÇÕ
-ÀÔ·Â : ¾øÀ½
-ÀÛ¼ºÀÚ : ±è¼¼Áß
-ÀÛ¼ºÀÏÀÚ : 2016/11/12
+íŒŒì¼ëª… : Calculate.c
+ê¸°ëŠ¥ : 1ë¶€í„° 100ê¹Œì§€ ìˆ«ìžë¥¼ ì„¸ê³ , í•©ì„ ê³„ì‚°í•˜ê³ , í•©ì„ ì¶œë ¥í•œë‹¤.
+í•¨ìˆ˜ëª…ì¹­ : main
+ì¶œë ¥ : í•©
+ìž…ë ¥ : ì—†ìŒ
+ìž‘ì„±ìž : Joey
+ìž‘ì„±ì¼ìž : 2016/11/12
 ***********************************************************/
-//ÀüÃ³¸®±â
+//ì „ì²˜ë¦¬ê¸°
 #include <stdio.h>
 #define MAXIMUM 100
 #define MINIMUM 1
 
-//ÇÔ¼ö¼±¾ð
+//í•¨ìˆ˜ì„ ì–¸
 int main(int argc, char* argv[]);
 
-//ÇÔ¼öÁ¤ÀÇ
+//í•¨ìˆ˜ì •ì˜
 int main(int argc, char* argv[]) {
-	// ÀÚµ¿º¯¼ö ¼±¾ð ¹× Á¤ÀÇ
+	// ìžë™ë³€ìˆ˜ ì„ ì–¸ ë° ì •ì˜
 	int sum = 0;
 	int number = MINIMUM;
 
-	//1. 100º¸´Ù ÀÛ°Å³ª °°Àº µ¿¾È ¹Ýº¹ÇÑ´Ù
+	//1. 100ë³´ë‹¤ ìž‘ê±°ë‚˜ ê°™ì€ ë™ì•ˆ ë°˜ë³µí•œë‹¤
 	while (number <= MAXIMUM) {
-		// 1.1. ÇÕÀ» ±¸ÇÑ´Ù
+		// 1.1. í•©ì„ êµ¬í•œë‹¤
 		//sum = sum + number;
 		sum += number;
-		// 1.2. ¼ýÀÚ¸¦ ¼¾´Ù
+		// 1.2. ìˆ«ìžë¥¼ ì„¼ë‹¤
 		//number = number + 1;
 		number++;
 	}
-	//2. ÇÕÀ» Ãâ·ÂÇÑ´Ù
+	//2. í•©ì„ ì¶œë ¥í•œë‹¤
 	printf("%d\n", sum);
 
-	//3. ³¡³»´Ù
+	//3. ëë‚´ë‹¤
 	return 0;
 }
