@@ -23,7 +23,7 @@ public class Main {
 			number++;
 		}
 		//2. 합을 출력한다.
-		System.out.printf("%d", sum);
-		// 1.3. 끝내다.
+		System.out.printf("%d\n", sum);
+		//3. 끝내다.
 	}
 }
