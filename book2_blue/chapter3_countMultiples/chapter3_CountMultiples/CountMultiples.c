@@ -1,45 +1,46 @@
 //CountMultiples.c
 /*
-ÆÄÀÏ¸íÄª : CountMultiples.c
-±â    ´É : 1ºÎÅÍ 100000±îÁö ¼öµé¿¡¼­ °³¼ö¸¦ ¼¼°í, 7ÀÇ ¹è¼ö¸¦ ±¸ÇÏ°í, °³¼ö¿Í 7ÀÇ ¹è¼ö¸¦ Ãâ·ÂÇÑ´Ù.
-           ±×¸®°í ¸¶Áö¸·À¸·Î ÀüÃ¼ °³¼ö¸¦ Ãâ·ÂÇÑ´Ù.
-ÀÔ    ·Â : ¾øÀ½
-Ãâ    ·Â : °³¼ö
-ÀÛ ¼º ÀÚ : Joey
-ÀÛ¼ºÀÏÀÚ : 2016/11/17
+íŒŒì¼ëª…ì¹­ : CountMultiples.c
+í•¨ìˆ˜ëª…ì¹­ : main
+ê¸°    ëŠ¥ : 1ë¶€í„° 100000ê¹Œì§€ ìˆ˜ë“¤ì—ì„œ ê°œìˆ˜ë¥¼ ì„¸ê³ , 7ì˜ ë°°ìˆ˜ë¥¼ êµ¬í•˜ê³ , ê°œìˆ˜ì™€ 7ì˜ ë°°ìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤.
+           ê·¸ë¦¬ê³  ë§ˆì§€ë§‰ìœ¼ë¡œ ì „ì²´ ê°œìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤.
+ìž…    ë ¥ : ì—†ìŒ
+ì¶œ    ë ¥ : ê°œìˆ˜
+ìž‘ ì„± ìž : Joey
+ìž‘ì„±ì¼ìž : 2016/11/17
 */
 
-//ÀüÃ³¸®±â
+//ì „ì²˜ë¦¬ê¸°
 #include <stdio.h>
 #define MAXIMUM 100000
 #define MULTIPLE 7
 
-//ÇÔ¼ö¼±¾ð
+//í•¨ìˆ˜ì„ ì–¸
 int main(int argc, char* argv[]);
 
-//ÇÔ¼öÁ¤ÀÇ
+//í•¨ìˆ˜ì •ì˜
 int main(int argc, char* argv[]) {
-	//ÀÚµ¿º¯¼ö ¼±¾ð ¹× Á¤ÀÇ
+	//ìžë™ë³€ìˆ˜ ì„ ì–¸ ë° ì •ì˜
 	int count = 0;
 	int number = 0;
 
-	//1. Á¦¸ñÀ» Ãâ·ÂÇÑ´Ù.
-	printf("°³¼ö\t\t\t7ÀÇ ¹è¼ö\n");
+	//1. ì œëª©ì„ ì¶œë ¥í•œë‹¤.
+	printf("ê°œìˆ˜\t\t\t7ì˜ ë°°ìˆ˜\n");
 
-	//2. ¼ö°¡ MAXIMUMº¸´Ù Å¬¶§±îÁö ¹Ýº¹ÇÑ´Ù.
+	//2. ìˆ˜ê°€ MAXIMUMë³´ë‹¤ í´ë•Œê¹Œì§€ ë°˜ë³µí•œë‹¤.
 	do {
-		// 2.2. 7ÀÇ ¹è¼ö¸¦ ±¸ÇÑ´Ù.
+		// 2.2. 7ì˜ ë°°ìˆ˜ë¥¼ êµ¬í•œë‹¤.
 		number += MULTIPLE;
-		// 2.1. °³¼ö¸¦ ¼¼´Ù.
+		// 2.1. ê°œìˆ˜ë¥¼ ì„¸ë‹¤.
 		count++;
-		// 2.3. °³¼ö¿Í 7ÀÇ ¹è¼ö¸¦ Ãâ·ÂÇÑ´Ù.
+		// 2.3. ê°œìˆ˜ì™€ 7ì˜ ë°°ìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤.
 		printf("%d\t\t\t%d\n", count, number);
 	} while (number <= MAXIMUM);
 	count--;
 
-	//3. °³¼ö¸¦ Ãâ·ÂÇÑ´Ù.
-	printf("7ÀÇ ¹è¼ö °³¼ö %d\n", count);
+	//3. ê°œìˆ˜ë¥¼ ì¶œë ¥í•œë‹¤.
+	printf("7ì˜ ë°°ìˆ˜ ê°œìˆ˜ %d\n", count);
 
-	//4. ³¡³»´Ù.
+	//4. ëë‚´ë‹¤.
 	return 0;
 }
