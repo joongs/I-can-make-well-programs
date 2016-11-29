@@ -21,21 +21,25 @@ public class Main {
 		
 		//자동 변수 선언
 		int count = 0;
-		int number = 0;
+		int number;
 		
 		//1. 제목을 출력한다.
 		System.out.println("개수\t\t\t7의 배수");
-		// 2.3. 7의 배수를 구한다.
+
 		//2. 수가 MAX보다 작거나 같은동안 반복한다.
-		for(number = 7; number <= MAX; number = number + MULTIPLE) {
+		for(number = MULTIPLE; number <= MAX; number += MULTIPLE) {
 			// 2.1. 개수를 센다.
 			count++;
-			// 2.2. 개수와 7의 배수를 출력한다.
+			
+			// 2.3. 개수와 7의 배수를 출력한다.
 			System.out.printf("%d\t\t\t%d\n",  count, number);
-			// 2.3. 7의 배수를 구한다.
+			
+			// 2.2. 7의 배수를 구한다.
 		}
+		
 		//3. 개수를 출력한다.
 		System.out.println("7의 배수 개수 " + count);
+		
 		//4. 끝내다.
 	}
 }
