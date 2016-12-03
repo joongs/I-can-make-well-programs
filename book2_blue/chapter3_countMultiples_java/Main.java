@@ -16,7 +16,7 @@ package countmultiples;
 // Main 클래스 선언및 정의
 public class Main {
 	// main 메소드 선언 및 정의
-	public static void main(String[] argc) {
+	public static void main(String[] args) {
 		//상수 변수들 선언
 		final int MAX = 100000;
 		final int MULTIPLE = 7;
