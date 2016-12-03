@@ -9,7 +9,7 @@
  * 작성일자 : 2016/11/14
 ***********************************************/
 public class Main {
-	public static void main(String[] argc) {
+	public static void main(String[] args) {
 		final int MAXIMUM = 100;
 		final int MINIMUM = 1;
 		int sum = 0;
