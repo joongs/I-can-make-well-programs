@@ -10,7 +10,7 @@
 import java.util.Scanner;
 
 public class Main {
-	public static void main(String[] argc) {
+	public static void main(String[] args) {
 		final int DIVISOR = 2;
 		final int EVENREMAINDER = 0;
 		int evenCount = 0;
