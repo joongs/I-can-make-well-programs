@@ -11,7 +11,7 @@
  *****************************************/
 
 public class Main {
-	public static void main(String[] argc) {
+	public static void main(String[] args) {
 		final int MAXIMUM = 100000;
 		final int MINIMUM = 1;
 		final int DIVISOR = 7;
@@ -58,7 +58,7 @@ public class Main {
  *****************************************/
 
 public class Main {
-	public static void main(String[] argc) {
+	public static void main(String[] args) {
 		final int MAXIMUM = 100000;
 		final int MINIMUM = 1;
 		final int DIVISOR = 7;
