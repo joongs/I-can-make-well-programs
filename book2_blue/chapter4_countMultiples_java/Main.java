@@ -14,7 +14,7 @@ package countmultiples;
 //클래스 선언
 public class Main {
 	//메소드 선언
-	public static void main(String[] argc) {
+	public static void main(String[] args) {
 		//상수 변수 선언
 		final int MAX = 100000;
 		final int MULTIPLE = 7;
