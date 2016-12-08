@@ -26,7 +26,7 @@ int main(int argc, char* argv[]) {
 	//1. 제목을 출력한다.
 	printf("수\t\t\t홀수의 합\n");
 	//2. 수가 MAX보다 작거나 같은 동안 반복한다.
-	for (number = 1; number <= MAX; number+=2) {		
+	for (number = 1; number <= MAX; number += MULTIPLE) {		
 		//2.2. 합을 구한다.
 		sum += number;
 		//2.3. 수, 홀수의 합을 출력한다.
