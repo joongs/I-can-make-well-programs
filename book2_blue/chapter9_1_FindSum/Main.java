@@ -26,7 +26,7 @@ public class Main {
 		//1. 제목을 입력한다.
 		System.out.println("수\t\t\t홀수의 합");
 		//2. 수가 MAX보다 작거나 같은 동안 반복한다.
-		for(number = 1; number <= MAX; number+=2) {			
+		for(number = 1; number <= MAX; number += MULTIPLE) {			
 			//2.2. 홀수의 합을 구한다.
 			sum += number;
 			//2.3. 수와 홀수의 합을 출력한다.
