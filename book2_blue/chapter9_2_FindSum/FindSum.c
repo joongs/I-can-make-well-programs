@@ -31,16 +31,15 @@ int main(int argc, char* argv[]) {
 	for (number = 1; number <= MAX; number++) {		
 		//2.2. 수가 홀수인지 짝수인지 확인한다.
 		remainder = number % DIVISOR;
-		if (remainder != 0) {
-			//2.2.1. 홀수이면 합을 구한다.
+		//2.3. 홀수이면 합을 구한다.
+		if (remainder != 0) {			
 			oddSum += number;
 		}
-		else {
-			//2.2.2. 짝수이면 합을 구한다.
+		else { //2.4. 짝수이면 합을 구한다.
 			evenSum += number;
 		}
 
-		//2.3. 수, 홀수의 합, 짝수의 합을 출력한다.
+		//2.5. 수, 홀수의 합, 짝수의 합을 출력한다.
 		printf("%d\t\t%d\t%d\n", number, oddSum, evenSum);
 
 		//2.1. 수를 센다.
