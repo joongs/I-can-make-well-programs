@@ -21,7 +21,7 @@ public class Main {
 		int sum = 0;
 		int number;
 		int sumToNumber;
-		int numberForSum;
+		int temp;
 		
 		//1. 제목을 출력한다.
 		System.out.println("수\t\t수까지의 합\t\t총합");
@@ -30,8 +30,8 @@ public class Main {
 		for(number = 1; number <= MAX; number++) {
 			//2.2. 수까지의 합을 구한다.
 			sumToNumber = 0;
-			for(numberForSum = 1; numberForSum <= number; numberForSum++) {
-				sumToNumber += numberForSum;
+			for(temp = 1; temp <= number; temp++) {
+				sumToNumber += temp;
 			}
 			//2.3. 총합을 구한다.
 			sum += sumToNumber;
