@@ -6,6 +6,7 @@
            마지막으로 총합을 출력한다.
 작  성  자 : Joey
 작성  일자 : 2016/12/11
+수정  일자 : 2016/12/12 number가 미지수이기 때문에 안쪽의 반복구조는 for가 아닌 while구조로 변경해야 한다.
 */
 //외부함수 가져오기
 #include <stdio.h>
@@ -31,8 +32,10 @@ int main(int argc, char* argv[]) {
 	for (number = 1; number <= MAX; number++) {		
 		//2.2. 수까지 합을 구한다.
 		sumToNumber = 0;
-		for (temp = 1; temp <= number; temp++) {
+		temp = 1;
+		while (temp <= number) {
 			sumToNumber += temp;
+			temp++;
 		}
 		//2.3. 총합을 구한다.
 		sum += (unsigned long int)sumToNumber;
