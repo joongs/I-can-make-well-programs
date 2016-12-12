@@ -6,6 +6,7 @@
 		  마지막으로 총합을 출력한다.
 작  성  자 : Joey
 작성  일자 : 2016/12/11
+수정  일자 : 2016/12/12 number가 미지수이기 때문에 for 대신 while 사용해야한다
 */
 
 //패키지를 선언한다.
@@ -30,8 +31,10 @@ public class Main {
 		for(number = 1; number <= MAX; number++) {
 			//2.2. 수까지의 합을 구한다.
 			sumToNumber = 0;
-			for(temp = 1; temp <= number; temp++) {
+			temp = 1;
+			while(temp <= number) {
 				sumToNumber += temp;
+				temp++;
 			}
 			//2.3. 총합을 구한다.
 			sum += sumToNumber;
