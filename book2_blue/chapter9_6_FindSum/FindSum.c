@@ -32,6 +32,7 @@ int main(int argc, char* argv[]) {
 
 	//1. 제목을 출력한다.
 	printf("수\t\t더할 수\t\t합\n");
+	
 	//2. 수가 MAX보다 작거나 같은동안 반복한다.
 	for (number = 1; number <= MAX; number++) {
 		//2.2. 더할 수를 구한다.
