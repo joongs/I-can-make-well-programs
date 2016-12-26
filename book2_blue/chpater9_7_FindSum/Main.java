@@ -23,7 +23,7 @@ public class Main {
 		double sum = 0.0;
 		int number;
 		double numberToAdd;
-		int factorial;
+		long factorial;
 		int factorialNumber = 1;
 		int count;
 		int remainder;
