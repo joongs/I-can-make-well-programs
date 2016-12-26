@@ -36,7 +36,7 @@ public class Main {
 			factorial = 1;
 			count = 1;
 			while (count <= factorialNumber) {
-				factorial = factorial * count;
+				factorial *= count;
 				count++;
 			}
 			factorialNumber += 2;
