@@ -16,7 +16,7 @@
 #define MULTIPLE 2
 
 //사용자 정의 자료형 선언
-typedef unsigned long int ULong;
+typedef unsigned long long int ULong;
 typedef unsigned short int UShort;
 
 //함수 선언
