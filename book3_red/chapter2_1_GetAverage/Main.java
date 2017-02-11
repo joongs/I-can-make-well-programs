@@ -50,6 +50,7 @@ public class Main {
 		System.out.format("평균 : %.1f%n", average);
 		
 		//4. 끝내다.
+		scanner.close();
 	}
 }
 
